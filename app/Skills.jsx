@@ -12,7 +12,7 @@ export const Skills = () => {
       <h3 className="uppercase text-center text-2xl font-semibold mb-10">
         My Skills 🧑‍💻
       </h3>
-      <div className="grid grid-cols-3 gap-20">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-20">
         <div className="text-center">
           <WindowIcon className="size-12 mx-auto mb-4" />
           <h4 className="mb-3 text-2xl font-semibold">
