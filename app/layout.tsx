@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Sami Nafis | Full‑stack Developer",
     description:
       "Full‑stack developer specializing in Next.js, Django, React, and cloud. I build fast, accessible web apps with great UX.",
-    url: "https://saminafis.dev",
+    url: "https://saminafisdev.vercel.app/",
     siteName: "Sami Nafis Portfolio",
     images: [
       {
