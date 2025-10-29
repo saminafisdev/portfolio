@@ -14,7 +14,7 @@ interface Particle {
 
 export default function ParticlesBackground({
   density = 40,
-  speed = 0.2,
+  speed = 0.5,
   connectDistance = 110,
   disabled = false,
   zIndex = 0,
