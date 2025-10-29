@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Sami Nafis Portfolio",
     images: [
       {
-        url: "/social-banner.png",
+        url: "/preview.png",
         width: 1200,
         height: 630,
         alt: "Sami Nafis Portfolio",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Sami Nafis | Full‑stack Developer",
     description:
       "Full‑stack developer specializing in Next.js, Django, React, and cloud. I build fast, accessible web apps with great UX.",
-    images: ["/social-banner.png"],
+    images: ["/preview.png"],
   },
 };
 
