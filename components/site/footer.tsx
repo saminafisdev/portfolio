@@ -8,7 +8,7 @@ export default function Footer() {
           <Text color="fg.muted">© {new Date().getFullYear()} Sami Nafis. All rights reserved.</Text>
           <HStack gap={4}>
             <ChakraLink colorPalette="blue" href="https://github.com/saminafisdev" target="_blank" rel="noreferrer">GitHub</ChakraLink>
-            <ChakraLink colorPalette="blue" href="https://www.linkedin.com/in/saminafis/" target="_blank" rel="noreferrer">LinkedIn</ChakraLink>
+            <ChakraLink colorPalette="blue" href="https://www.linkedin.com/in/saminafisdev/" target="_blank" rel="noreferrer">LinkedIn</ChakraLink>
             <ChakraLink colorPalette="blue" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</ChakraLink>
           </HStack>
         </Flex>

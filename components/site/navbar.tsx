@@ -61,7 +61,7 @@ export default function Navbar() {
               </a>
             </IconButton>
             <IconButton asChild aria-label="LinkedIn" variant="ghost" size="sm" colorPalette="blue">
-              <a href="https://www.linkedin.com/in/saminafis/" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/saminafisdev/" target="_blank" rel="noreferrer">
                 <FaLinkedin />
               </a>
             </IconButton>
