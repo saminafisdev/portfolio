@@ -31,10 +31,10 @@ export default function Navbar() {
             "name": "Projects",
             "link": "#projects"
         },
-        {
-            "name": "Contact",
-            "link": "#contact"
-        }
+        // {
+        //     "name": "Contact",
+        //     "link": "#contact"
+        // }
     ]
 
   return (
