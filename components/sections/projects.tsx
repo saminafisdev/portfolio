@@ -16,6 +16,23 @@ const TECH_ICON: Record<TechKey, { label: string; icon: React.ReactNode }> = {
   wordpress: { label: "WordPress API", icon: <SiWordpress /> },
 }
 
+// Lightweight SVG shimmer for blur placeholders
+const shimmer = (w: number, h: number) =>
+  `data:image/svg+xml;base64,${typeof window === "undefined" ? Buffer.from : (str: string) => window.btoa(str)}(
+    '<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg">\n'
+    + '<defs>\n'
+    + '  <linearGradient id="g">\n'
+    + '    <stop stop-color="#eee" offset="20%"/>\n'
+    + '    <stop stop-color="#ddd" offset="50%"/>\n'
+    + '    <stop stop-color="#eee" offset="70%"/>\n'
+    + '  </linearGradient>\n'
+    + '</defs>\n'
+    + '<rect width="${w}" height="${h}" fill="#eee"/>\n'
+    + '<rect id="r" width="${w}" height="${h}" fill="url(#g)"/>\n'
+    + '<animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />\n'
+    + '</svg>'
+  )` as unknown as string
+
 const projects: Array<{
   title: string
   description: string
@@ -38,7 +55,7 @@ const projects: Array<{
     tech: ["php", "react", "mysql", "sass", "wordpress"],
     link: "https://www.sorce.io",
     repo: "#",
-    image: "/sorceio.png",
+    image: "/sorceio.webp",
   },
 ]
 
@@ -64,6 +81,9 @@ export default function Projects() {
                       alt={`${p.title} cover`}
                       width={1200}
                       height={630}
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      placeholder="blur"
+                      blurDataURL={shimmer(1200, 630)}
                       priority={false}
                       style={{ width: "100%", height: "auto" }}
                     />
