@@ -18,8 +18,7 @@ export default function Hero() {
         <Text color="fg.muted" fontWeight="medium">Hi, I’m</Text>
         <Heading size={{ base: "2xl", md: "3xl" }} mt={2}>Sami Nafis</Heading>
         <Text mt={4} fontSize={{ base: "md", md: "lg" }} color="fg.muted">
-          Full‑stack developer specializing in Next.js, Python, PHP, and C#. I build fast, accessible, and elegant web apps.
-        </Text>
+            A solutions-focused Full-Stack Developer dedicated to building fast, accessible, and elegant digital experiences. I leverage a robust, polyglot skill set, including Next.js, Python, PHP, and C#, to drive end-to-end application development and optimization.        </Text>
         <HStack gap={4} mt={8}>
           <Button asChild colorPalette="blue">
             <Link href="#projects">View Projects</Link>

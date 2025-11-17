@@ -9,8 +9,8 @@ export default function Home() {
     <Box as="main">
       <Hero />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
       {/*<Contact />*/}
     </Box>
   );

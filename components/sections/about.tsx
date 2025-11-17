@@ -9,8 +9,7 @@ export default function About() {
           <Box>
             <Heading size="xl">About</Heading>
             <Text mt={4} color="fg.muted">
-              I’m a developer who enjoys building polished user experiences and robust backends. I value clean code, automation, and thoughtful DX.
-            </Text>
+                As a Full-Stack professional, I specialize in the end-to-end development of modern web applications. My passion lies in the full lifecycle of software development: from the initial architectural vision to the final implementation. I consistently invest the effort required to master new problem domains and deliver well-engineered, thoughtful solutions.</Text>
           </Box>
           <Box borderRadius="xl" boxShadow="lg" overflow="hidden">
             <Image

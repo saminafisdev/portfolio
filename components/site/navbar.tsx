@@ -24,12 +24,12 @@ export default function Navbar() {
             "link": "#about"
         },
         {
-            "name": "Skills",
-            "link": "#skills"
-        },
-        {
             "name": "Projects",
             "link": "#projects"
+        },
+        {
+            "name": "Skills",
+            "link": "#skills"
         },
         // {
         //     "name": "Contact",
