@@ -1,48 +1,48 @@
 "use client"
 
 import {
-    Box,
-    Container,
-    Flex,
-    HStack,
-    Link as ChakraLink,
-    Text,
-    Spacer,
-    Menu,
-    IconButton,
-    Portal
+  Box,
+  Container,
+  Flex,
+  HStack,
+  Link as ChakraLink,
+  Text,
+  Spacer,
+  Menu,
+  IconButton,
+  Portal
 } from "@chakra-ui/react"
 import Link from "next/link"
 import { ColorModeButton } from "@/components/ui/color-mode"
-import {LuMenu} from "react-icons/lu";
+import { LuMenu } from "react-icons/lu";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Navbar() {
-    const links = [
-        {
-            "name": "About",
-            "link": "#about"
-        },
-        {
-            "name": "Projects",
-            "link": "#projects"
-        },
-        {
-            "name": "Skills",
-            "link": "#skills"
-        },
-        // {
-        //     "name": "Contact",
-        //     "link": "#contact"
-        // }
-    ]
+  const links = [
+    // {
+    //     "name": "About",
+    //     "link": "#about"
+    // },
+    {
+      "name": "Projects",
+      "link": "#projects"
+    },
+    {
+      "name": "Skills",
+      "link": "#skills"
+    },
+    // {
+    //     "name": "Contact",
+    //     "link": "#contact"
+    // }
+  ]
 
   return (
     <Box position="sticky" top="0" zIndex={10} bg={{ base: "bg", _dark: "bg" }} borderBottomWidth="1px">
       <Container maxW="7xl" py={{ base: 3, md: 4 }}>
         <Flex align="center">
           <ChakraLink as={Link} href="/" _hover={{ textDecoration: "none" }}>
-            <Text fontWeight="bold" fontSize={{mdDown: "md",md: "lg"}}>{`<SamiNafis />`}</Text>
+            <Text fontWeight="bold" fontSize={{ mdDown: "md", md: "lg" }}>{`<SamiNafis />`}</Text>
           </ChakraLink>
           <Spacer />
           {/* Desktop links */}

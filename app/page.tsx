@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Box as="main">
       <Hero />
-      <About />
+      {/* <About /> */}
       <Projects />
       <Skills />
       {/*<Contact />*/}
